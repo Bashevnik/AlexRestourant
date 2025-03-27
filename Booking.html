@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Tasty Corner</title>
+    <link rel="stylesheet" href="CSS_Restorant/Booking.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Подключаем шрифт Roboto -->
+</head>
+<body>
+   
+    <header>
+        <div class="logo">
+            
+            <a href="index.html">Tasty Corner </a>
+
+        </div>        <nav>
+            <a href="Home.html">Home</a>
+            <a href="Menu.html">Menu</a>
+            <a href="About_Us.html">About Us</a>
+            <a href="#">Booking</a>
+        </nav>
+    </header>
+
+   
+    <section class="booking-section">
+        <div class="booking-content">
+            <h2>Book a Table</h2>
+            <p>Reserve your spot at Tasty Corner and enjoy a delightful dining experience.</p>
+            
+        
+            <form action="https://formspree.io/f/mpwpdelp" method="POST" class="booking-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="date" name="date" placeholder="Date" required>
+                <input type="time" name="time" placeholder="Time" required>
+                <select name="guests" required>
+                    <option value="" disabled selected>Number of Guests</option>
+                    <option value="1">1 Guest</option>
+                    <option value="2">2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests</option>
+                    <option value="5">5+ Guests</option>
+                </select>
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+    </section>
+    <script src="JS_Restorant/Booking.js"></script>
+</body>
+</html>
